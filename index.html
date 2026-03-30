@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danang Kusuma Widhagdho | IT & Operations Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .chart-container { position: relative; height: 300px; width: 100%; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-xl font-bold text-blue-900">DKW.</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-600 font-medium">Home</a>
+                    <a href="#experience" class="hover:text-blue-600 font-medium">Experience</a>
+                    <a href="#performance" class="hover:text-blue-600 font-medium">Performance</a>
+                    <a href="#skills" class="hover:text-blue-600 font-medium">Skills</a>
+                    <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition shadow-md">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-2/3 space-y-6">
+                <div class="inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-sm font-semibold border border-blue-500/30">
+                    6+ Years Professional Experience
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                    Danang Kusuma Widhagdho
+                </h1>
+                <p class="text-xl text-gray-300 max-w-2xl">
+                    IT & Operations Professional yang fokus pada Kepemimpinan Teknis dan Stabilitas Sistem. Mengubah infrastruktur IT menjadi katalis pertumbuhan bisnis.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#experience" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold shadow-lg shadow-blue-500/20 flex items-center gap-2">
+                        Lihat Karir <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/3 mt-12 md:mt-0 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-blue-500/30 shadow-2xl">
+                    <img src="profile.jpg" alt="Danang Professional" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Cards -->
+    <div class="max-w-7xl mx-auto px-4 -mt-10 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                <div class="text-3xl font-bold text-blue-600">34%</div>
+                <div class="text-sm text-gray-500 font-medium uppercase tracking-wider">Revenue Growth</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                <div class="text-3xl font-bold text-blue-600">99.9%</div>
+                <div class="text-sm text-gray-500 font-medium uppercase tracking-wider">System Uptime</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                <div class="text-3xl font-bold text-blue-600">40%</div>
+                <div class="text-sm text-gray-500 font-medium uppercase tracking-wider">Process Efficiency</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                <div class="text-3xl font-bold text-blue-600">25%</div>
+                <div class="text-sm text-gray-500 font-medium uppercase tracking-wider">Admin Workload Reduction</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Graphics / Performance Section -->
+    <section id="performance" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Performance Visualization</h2>
+                <p class="text-gray-500 mt-2">Data-driven impact on business operations and growth.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Chart 1: Revenue vs Efficiency -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <i class="fas fa-chart-line text-blue-600"></i> Operational Efficiency Trend
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="efficiencyChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-500 italic text-center">Implementasi workflow berbasis WordPress & IT Automation (2019-2023)</p>
+                </div>
+
+                <!-- Chart 2: System Reliability -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <i class="fas fa-tasks text-blue-600"></i> Project Execution Time (Days)
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="executionChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-500 italic text-center">Penurunan waktu eksekusi setelah implementasi Digital Tracking System</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+                <span class="w-12 h-1 bg-blue-600 rounded"></span>
+                Professional Experience
+            </h2>
+
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <h3 class="text-xl font-bold text-blue-900">Plankton Tour Indonesia</h3>
+                        <p class="text-gray-500 italic">Project & Digital Marketing Coordinator</p>
+                        <p class="text-sm font-semibold text-blue-600">2024 — 2026</p>
+                    </div>
+                    <div class="md:w-3/4 bg-white p-8 rounded-2xl border border-gray-100 shadow-sm card-hover">
+                        <ul class="space-y-3 text-gray-600 list-disc pl-5">
+                            <li>Memimpin transformasi digital yang meningkatkan revenue sebesar 34%.</li>
+                            <li>Menjaga ketersediaan sistem 24/7 dan mengoordinasikan dukungan vendor eksternal.</li>
+                            <li>Menerapkan langkah-langkah keamanan digital dan sistem pencadangan data yang kokoh.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <h3 class="text-xl font-bold text-blue-900">Plankton Tour Indonesia</h3>
+                        <p class="text-gray-500 italic">IT Consultant & Content Editor</p>
+                        <p class="text-sm font-semibold text-blue-600">2018 — 2022</p>
+                    </div>
+                    <div class="md:w-3/4 bg-white p-8 rounded-2xl border border-gray-100 shadow-sm card-hover">
+                        <ul class="space-y-3 text-gray-600 list-disc pl-5">
+                            <li>Membangun infrastruktur website perusahaan dan mengotomatisasi workflow administratif.</li>
+                            <li>Mengurangi beban kerja manual sebesar 25% melalui inovasi sistem IT.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Certifications -->
+    <section id="skills" class="py-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Technical Expertise</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Network & System Admin</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+                                <div class="bg-blue-500 h-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Cloud Data & Oracle Infrastructure</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+                                <div class="bg-blue-500 h-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Digital Marketing & Analytics</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+                                <div class="bg-blue-500 h-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Top Certifications</h2>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+                            <i class="fas fa-award text-yellow-400 text-2xl"></i>
+                            <div>
+                                <p class="font-bold">Oracle Data Platform 2025</p>
+                                <p class="text-xs text-gray-400">Certified Foundations Associate</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+                            <i class="fas fa-user-shield text-blue-400 text-2xl"></i>
+                            <div>
+                                <p class="font-bold">Ethical Hacker (Cisco)</p>
+                                <p class="text-xs text-gray-400">Networking Academy Certification</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Hubungi Saya</h2>
+            <p class="text-gray-500 mb-12 italic">"Bridging complex technology with seamless business operations."</p>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:danang.k.23.12@gmail.com" class="flex items-center gap-3 px-6 py-3 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition font-bold">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://linkedin.com/in/danang-kusuma-widhagdho" target="_blank" class="flex items-center gap-3 px-6 py-3 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition font-bold">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="tel:+6282139773700" class="flex items-center gap-3 px-6 py-3 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition font-bold">
+                    <i class="fas fa-phone"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Chart 1: Efficiency & Revenue Growth Simulation
+        const ctx1 = document.getElementById('efficiencyChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
+                datasets: [{
+                    label: 'Operational Efficiency (%)',
+                    data: [45, 55, 65, 80, 90, 95],
+                    borderColor: '#3b82f6',
+                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }, {
+                    label: 'Revenue Impact (Growth %)',
+                    data: [0, 10, 15, 22, 34, 40],
+                    borderColor: '#10b981',
+                    borderDash: [5, 5],
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' }
+                },
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Chart 2: Project Execution Time Reduction
+        const ctx2 = document.getElementById('executionChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['Before System', 'After Tracking System'],
+                datasets: [{
+                    label: 'Days to Complete Project',
+                    data: [14, 8.4], // Representing 40% reduction
+                    backgroundColor: ['#94a3b8', '#3b82f6'],
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: { beginAtZero: true, title: { display: true, text: 'Avg. Days' } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
